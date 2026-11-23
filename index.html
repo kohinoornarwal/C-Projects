@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C Programming Mini Projects | Kohinoor Narwal</title>
+  <meta name="description" content="Three console-based projects built in C: a calculator, a bank management system and a password generator.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="#top">&lt;KN/&gt;</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#concepts">Concepts</a>
+      <a href="#run">Run it</a>
+      <a href="#author">Author</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">First-year portfolio</p>
+      <h1>C Programming <span>Mini Projects</span></h1>
+      <p class="lead">Three console-based applications written in C, covering switch case, functions, structures, file handling, strings, loops and random numbers.</p>
+      <div class="badges">
+        <span class="badge">C</span>
+        <span class="badge">GCC</span>
+        <span class="badge">First Year</span>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="https://github.com/kohinoornarwal/C-Projects" target="_blank" rel="noopener">GitHub Repository</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="section-sub">Each project builds on the one before it, from basic menus to saving data in files.</p>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="icon">🧮</span>
+            <span class="level basic">Basic</span>
+          </div>
+          <h3>Simple Calculator</h3>
+          <p class="file">simple_calculator.c</p>
+          <ul>
+            <li>Addition, subtraction, multiplication, division and modulus</li>
+            <li>Menu-driven, repeats until you choose to exit</li>
+            <li>Handles division by zero and modulus by zero</li>
+          </ul>
+          <div class="tags">
+            <span>Switch case</span><span>Operators</span><span>Functions</span>
+          </div>
+          <a class="link" href="https://github.com/kohinoornarwal/C-Projects/blob/main/simple_calculator.c" target="_blank" rel="noopener">View source code →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="icon">🏦</span>
+            <span class="level mid">Intermediate</span>
+          </div>
+          <h3>Bank Management System</h3>
+          <p class="file">bank_management.c</p>
+          <ul>
+            <li>Create accounts with an account number, holder name and opening deposit</li>
+            <li>Deposit and withdraw, with checks for invalid amounts and insufficient balance</li>
+            <li>Check any balance and display all accounts in a table</li>
+            <li>Records saved in a binary file (<code>accounts.dat</code>), so data stays after the program closes</li>
+          </ul>
+          <div class="tags">
+            <span>Structures</span><span>Functions</span><span>File handling</span>
+          </div>
+          <a class="link" href="https://github.com/kohinoornarwal/C-Projects/blob/main/bank_management.c" target="_blank" rel="noopener">View source code →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="icon">🔑</span>
+            <span class="level practical">Practical</span>
+          </div>
+          <h3>Password Generator</h3>
+          <p class="file">password_generator.c</p>
+          <ul>
+            <li>Choose the password length (4 to 64 characters)</li>
+            <li>Pick character types: lowercase, uppercase, digits, symbols</li>
+            <li>Generates a random password and lets you make more without restarting</li>
+          </ul>
+          <div class="tags">
+            <span>Strings</span><span>Loops</span><span>Random functions</span>
+          </div>
+          <a class="link" href="https://github.com/kohinoornarwal/C-Projects/blob/main/password_generator.c" target="_blank" rel="noopener">View source code →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONCEPTS -->
+    <section id="concepts">
+      <h2>Concepts Practiced</h2>
+      <p class="section-sub">The core topics of the course, put to work across the three projects.</p>
+      <div class="chips">
+        <div class="chip"><code>printf</code> / <code>scanf</code><small>Input and output</small></div>
+        <div class="chip"><code>if-else</code> / <code>switch</code><small>Decision making</small></div>
+        <div class="chip"><code>do-while</code> / <code>for</code><small>Loops</small></div>
+        <div class="chip">Functions<small>User-defined</small></div>
+        <div class="chip"><code>struct</code><small>Structures</small></div>
+        <div class="chip"><code>fopen</code> <code>fread</code> <code>fwrite</code> <code>fseek</code><small>File handling</small></div>
+        <div class="chip"><code>strcat</code> / <code>strlen</code><small>String functions</small></div>
+        <div class="chip"><code>rand()</code> / <code>srand()</code><small>Random numbers</small></div>
+      </div>
+    </section>
+
+    <!-- HOW TO RUN -->
+    <section id="run">
+      <h2>How to Compile and Run</h2>
+      <p class="section-sub">Make sure you have GCC installed, then run these from the project folder.</p>
+      <div class="terminal">
+        <div class="bar"><i></i><i></i><i></i><span>terminal</span></div>
+<pre><span class="c"># Simple Calculator</span>
+gcc simple_calculator.c -o calculator
+./calculator
+
+<span class="c"># Bank Management System</span>
+gcc bank_management.c -o bank
+./bank
+
+<span class="c"># Password Generator</span>
+gcc password_generator.c -o password
+./password</pre>
+      </div>
+      <p class="note">On Windows, run the generated <code>.exe</code> files instead (for example <code>calculator.exe</code>). The bank program creates <code>accounts.dat</code> automatically the first time you add an account.</p>
+    </section>
+
+    <!-- AUTHOR -->
+    <section id="author" class="author">
+      <h2>Author</h2>
+      <p class="name">Kohinoor Narwal</p>
+      <p class="section-sub">First-year student &middot; Student ID GF202676017</p>
+      <a class="btn primary" href="https://github.com/kohinoornarwal" target="_blank" rel="noopener">GitHub Profile</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made by Kohinoor Narwal &middot; Built with HTML and CSS</p>
+  </footer>
+
+</body>
+</html>
